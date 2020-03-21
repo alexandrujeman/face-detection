@@ -13,7 +13,11 @@ setup_logger()
 
 
 register_coco_instances(
-    "fruits_nuts", {}, "./data/trainval.json", "./data/images")
+    "fruits_nuts",
+    {},
+    "./fruits_demo/data/trainval.json",
+    "./fruits_demo/data/images"
+)
 
 fruits_nuts_metadata = MetadataCatalog.get("fruits_nuts")
 dataset_dicts = DatasetCatalog.get("fruits_nuts")
